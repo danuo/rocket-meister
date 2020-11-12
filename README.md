@@ -1,11 +1,11 @@
 # RocketMeister
-RocketMeister is an extensive and sophisticated gym environment for developing and comparing reinforced learning algorithms.
+RocketMeister is an extensive and sophisticated gym environment for developing and comparing reinforcement learning algorithms. 
 <p align="center">
   <img width="55%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/landing_gif.gif"><br>
   <a href="https://www.youtube.com/watch?v=G9UUzC-F4Y4">Link to YouTube video</a>
 </p>
 
-<!-- There is also a writeup on Medium aimd towards people that are new to reinforced learning. The article explains many of the ideas and concepts behind the decisions made during the creation of the environment. [Find the medium article here](https://www.google.com) -->
+There is also a writeup on Medium aimed towards people that are new to reinforcement learning. The article explains many of the ideas and concepts behind the decisions made during the creation of the environment. You can find the articles here: [Medium article part 1](https://medium.com/@d.brummerloh/ultimate-guide-for-reinforced-learning-part-1-creating-a-game-956f1f2b0a91), [Medium article part 2](https://medium.com/@d.brummerloh/ultimate-guide-for-ai-game-creation-part-2-training-e252108dfbd1)
 
 
 ```python3
@@ -22,7 +22,7 @@ tensorflow OR pytorch  (for training and rollout)
 #### These are the key features:
 * **Gym environment with various settings.** For detailed configuration options, see below.
 * **Playable by humans.** Rendering and interaction is implemented through `pygame` library and can be accessed by the script `start_human.py`.
-* **Policy training with various reinforced learning algorithms** The environment can be trained with various agents, such as SAC, PPO and ARS. Agent training is implemented with the `ray` library and can be accessed by the script `start_training.py`.
+* **Policy training with various reinforcement learning algorithms** The environment can be trained with various agents, such as SAC, PPO and ARS. Agent training is implemented with the `ray` library and can be accessed by the script `start_training.py`.
 * **Export of frames and replays** The environment can export rendered frames with the `export_frames` environment keyword. Replays can be exported with export_states flag. Multiple replays can later be rendered to create a video. To render multiple replays, use the script `start_replay_renderer.py`.
 * **Level Generator** The environment features a level generator to prevent overfitting during training. One can achieve a high level of generalizsation with the trained policy. Use the level generator to generate random levels by setting `env_name` to 'random' inside the `env_config`.
 <p align="center">
@@ -30,17 +30,13 @@ tensorflow OR pytorch  (for training and rollout)
   Sample levels from the level generator.
 </p>
 
-
-
-
 ### Play as human
 **run** `start_human.py`  Try to achieve a good score yourself by playing the environment interactively. **The rocket is controlled with the arrow keys**, you can **reset the environment by pressing r**
 * Export the replay of each round by passing `export_states: True` in the environment config. Later, you can render the replay with `start_replay_renderer.py`.
 * Export each rendered frame as a .jpg file by passing `export_frames: True` in the environment config.
 
-
 ### Train a policy
-**run** `start_ray_training.py`  This file allows you to train the environment with different reinforced learning agents. To change the utilized agent, simply change the agent string from 'SAC' accordingly (for example 'PPO', 'DDPG' or 'ARS'). To see a full list of supported agents, visit the ray documentation: https://docs.ray.io/en/latest/rllib-algorithms.html
+**run** `start_ray_training.py`  This file allows you to train the environment with different reinforcement learning agents. To change the utilized agent, simply change the agent string from 'SAC' accordingly (for example 'PPO', 'DDPG' or 'ARS'). To see a full list of supported agents, visit the ray documentation: https://docs.ray.io/en/latest/rllib-algorithms.html
 
 ### Rollout a policy
 **run** `start_ray_rollout.py`  This file allows you to rollout a previously trained policy. To do so, you need to set chechpoint_path to the checkpoint you want to use for the rollout.
