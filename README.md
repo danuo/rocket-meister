@@ -74,21 +74,21 @@ Currently, these options are available for `env_name`:
         <tr>
             <th>
                 <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level1.jpg"><br>
-                env_name = level1 
+                env_name = 'level1' 
             </th>
             <th>
-                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level1.jpg"><br>
-                env_name = level 2
+                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level2.jpg"><br>
+                env_name = 'level2'
                 </th>
         </tr>
         <tr>
             <th>
-                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                env_name = level1 & env_flipped = True
+                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level1_flipped.jpg"><br>
+                env_name = 'level1', env_flipped = True
                 </th>
             <th>
                 <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                env_name = random
+                env_name = 'random'
                 </th>
         </tr>
     </table>
