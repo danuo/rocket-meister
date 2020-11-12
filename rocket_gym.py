@@ -360,6 +360,8 @@ class Rocket:
             # check if line is vertical (infinite slope)
             if x1 == x2:
                 return(x1,yp)
+            if y1 == y2:
+                y2 += 1e-2
             # slope: dy/dx
             a = (y2-y1) / (x2-x1)
             b = y1 - a * x1
