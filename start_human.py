@@ -51,6 +51,7 @@ env_config = {
     'max_steps': 1000,
     'gui_reward_total': True,
     'gui_echo_distances': True,
+    'gui_level': True,
     'gui_velocity': True,
     'gui_goal_ang': True,
     'gui_frames_remaining': True,
