@@ -5,7 +5,7 @@ RocketMeister is an extensive and sophisticated gym environment for developing a
   <a href="https://www.youtube.com/watch?v=G9UUzC-F4Y4">Link to YouTube video</a>
 </p>
 
-There is also a writeup on Medium aimd towards people that are new to reinforced learning. The article explains many of the ideas and concepts behind the decisions made during the creation of the environment. [Find the medium article here](https://www.google.com)
+<!-- There is also a writeup on Medium aimd towards people that are new to reinforced learning. The article explains many of the ideas and concepts behind the decisions made during the creation of the environment. [Find the medium article here](https://www.google.com) -->
 
 
 ```python3
@@ -73,22 +73,22 @@ Currently, these options are available for `env_name`:
     <table style="width:60%">
         <tr>
             <th>
-                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                `'env_name': 'level1'` 
+                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level1.jpg"><br>
+                env_name = level1 
             </th>
             <th>
-                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                `'env_name': 'level1'` 
+                <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/env_level1.jpg"><br>
+                env_name = level 2
                 </th>
         </tr>
         <tr>
             <th>
                 <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                `'env_name': 'level1'` 
+                env_name = level1 & env_flipped = True
                 </th>
             <th>
                 <img width="85%" src="https://raw.githubusercontent.com/danuo/rocket-meister/master/media/levelgen_gif.gif"><br>
-                `'env_name': 'level1'` 
+                env_name = random
                 </th>
         </tr>
     </table>
