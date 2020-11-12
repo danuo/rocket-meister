@@ -40,4 +40,15 @@ config = {
 config_json = json.dumps(config)
 parser = rollout.create_parser()
 args = parser.parse_args(string.split() + ['--config', config_json])
+
+# ──────────────────────────────────────────────────────────────────────────
+# if you want to automate this, by calling rollout.run() multiple times, you
+# uncomment the following lines too. They need to called before calling
+# rollout.run() a second, third, etc. time
+# ray.shutdown()
+# tune.register_env("rocketgame", lambda c: MultiEnv(c))
+# from ray.rllib import _register_all
+# _register_all()
+# ──────────────────────────────────────────────────────────────────────────
+
 rollout.run(args, parser)
