@@ -5,7 +5,7 @@ RocketMeister is an extensive and sophisticated gym environment for developing a
   <a href="https://www.youtube.com/watch?v=GZlHsuTJG58">Link to YouTube video</a>
 </p>
 
-There is also a writeup on Medium aimed towards people that are new to reinforcement learning. The article explains many of the ideas and concepts behind the decisions made during the creation of the environment. You can find the articles here: [Medium article part 1](https://medium.com/@d.brummerloh/ultimate-guide-for-reinforced-learning-part-1-creating-a-game-956f1f2b0a91), [Medium article part 2](https://medium.com/@d.brummerloh/ultimate-guide-for-ai-game-creation-part-2-training-e252108dfbd1)
+There is also a writeup on Medium aimed towards people that are new to reinforcement learning. The articles explain many of the ideas and concepts behind the decisions made during the creation of the environment. You can find the articles here: [Medium article part 1](https://medium.com/@d.brummerloh/ultimate-guide-for-reinforced-learning-part-1-creating-a-game-956f1f2b0a91), [Medium article part 2](https://medium.com/@d.brummerloh/ultimate-guide-for-ai-game-creation-part-2-training-e252108dfbd1)
 
 
 ```python3
